@@ -1,13 +1,16 @@
 package biblioteka;
 
+import java.util.List;
+
 public class Knjiga {
 
 	private String naslov;
 	private long isbn;
-	private String autori;
+	
 	private String izdavac;
 	private int izdanje;
-
+	private List<Autor>autori;
+	
 	public String getNaslov() {
 		return naslov;
 	}
@@ -24,11 +27,13 @@ public class Knjiga {
 		this.isbn = isbn;
 	}
 
-	public String getAutori() {
+	
+
+	public List<Autor> getAutori() {
 		return autori;
 	}
 
-	public void setAutori(String autori) {
+	public void setAutori(List<Autor> autori) {
 		this.autori = autori;
 	}
 
